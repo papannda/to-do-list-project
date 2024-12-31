@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TO DO LIST version 1</title>
+
+<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="container">
+        <h1 id="title">やることリスト</h1>
+        
+        <label for ="lang">Language</label>
+        <select id="lang">
+            <option value="index.html" selected>JPN</option>
+            <option value="index-en.html">EN</option>   
+        </select>
+        
+        <div class="container-content">
+        <input type="text" placeholder="To-do-listを入力してください" id="text-input">
+        <label for="date" id="date">期日:</label>
+        <input type="date" id="date-input">
+        <label for="priority" id="pro-text"> 優先度:</label>
+        <select id="priority">
+            <option>低</option>
+            <option selected>普</option>
+            <option>高</option>
+        </select>
+
+        <button id="add-btn">登録</button>
+
+        </div>
+        
+
+        
+        <ul id="to-do-list">
+            
+            
+            <!-- <li class="list-item">
+                <span class="to-do-text">買い物</span>
+                <button type="button" class="delete-button">削除</button>
+            </li>
+　　　　　　　
+            <li class="list-item">
+                <span class="to-do-text">買い物</span>
+                <button type="button" class="delete-button">削除</button>
+            </li>
+
+            <li class="list-item">
+                <span class="to-do-text">買い物</span>
+                <button type="button" class="delete-button">削除</button>
+            </li> -->
+
+            
+        </ul>
+        
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

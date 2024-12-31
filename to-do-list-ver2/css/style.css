@@ -1,0 +1,188 @@
+html{font-size: 62.5%;
+    }
+
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+html {
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 767px) {
+    html {
+      font-size: calc(10 / 375 * 100vw);
+    }
+}
+}
+#container{
+    width: 900px;
+    margin: 50px auto 0;
+}
+
+@media screen and (max-width: 767px) {
+    #container{
+        max-width: 320px;
+        padding: 1rem;
+        }
+    }
+.container-content{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+.container-content {
+    flex-direction: column;
+        }
+    }
+
+h1{
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+    h1{
+    font-size: 2rem;
+    
+        }
+    }
+
+#lang{
+    margin-bottom: 20px;
+    
+}
+
+label{
+    font-size: 1.5rem;
+}
+
+#text-input{
+    width: 60%;
+    height: 40%;
+    box-sizing: border-box;
+    font-size: 2rem;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+    #text-input{
+    width: 100%;
+    
+    font-size: 1.5rem;
+    padding-left: 0;
+    margin-bottom: .9rem;
+        }
+    }
+#date-input,#priority{
+    height:35px ;
+}
+
+@media screen and (max-width: 767px) {
+#date-input,#priority{
+    height: 40%;
+    margin-bottom: .9rem;
+        }
+    }
+
+#pro-text{
+    font-size: 1.5rem;
+}
+
+#to-do-list{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 900px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    #to-do-list{
+        height: 450px;
+        border: 1px solid;
+        border-radius: 10px;
+            }
+        }
+    
+.list-title{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.list-item{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+li{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+    li{
+        font-size: 1rem;
+        gap: 1rem;
+            }
+        }
+    
+
+.to-do-text{
+    display: flex;
+    gap: 20px;
+}
+
+
+#add-btn{
+    width: 55px;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: coral;
+    color: white;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    #add-btn{
+        
+        margin: 1rem 0 0 auto;
+            }
+        }
+    
+
+
+
+.delete-button,.complete-button{
+    border: none;
+    outline: none;
+    background-color: orange;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.complete-button{
+    background-color: green;
+}
+
+.delete-button:hover{
+    opacity: 0.5;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: black;
+}
